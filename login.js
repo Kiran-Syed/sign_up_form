@@ -15,7 +15,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
 import {
   getAuth,
-  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -45,17 +45,16 @@ const button = document.getElementById("submit");
 // })
 button.addEventListener("click", function (event) {
   event.preventDefault();
-  const name = document.getElementById('name').value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
   const auth = getAuth();
-  createUserWithEmailAndPassword(auth, email, password)
+  signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed up
       const user = userCredential.user;
       alert("successful");
-      window.location.href="login.html"
+      window.location.href="myweb.html"
       // ...
     })
     .catch((error) => {

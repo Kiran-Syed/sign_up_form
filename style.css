@@ -1,62 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-    display: block;
-    font-weight: bold;
-    font-style: italic;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #44ae47;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #3cb943;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/signin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  /* background-color: #fff; */
+  /* background-color: #f2d5f5; */
+  background: linear-gradient(
+    65deg,
+    rgba(162, 212, 229, 1) 0%,
+    rgba(231, 177, 214, 1) 29%,
+    rgba(228, 224, 183, 1) 52%,
+    rgba(176, 235, 167, 1) 84%,
+    rgba(161, 216, 227, 1) 100%
+  );
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.contain {
+  background: linear-gradient(
+    65deg,
+    rgba(162, 212, 229, 1) 10%,
+    rgba(208, 177, 231, 1) 29%,
+    rgba(228, 183, 227, 1) 49%,
+    rgba(224, 185, 197, 1) 78%,
+    rgba(161, 216, 227, 1) 100%
+  );
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  font-style: italic;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(14, 14, 144);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(61, 61, 232);
+}
